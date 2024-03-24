@@ -17,9 +17,9 @@ public class LLLogin extends DatabaseSetting {
             st.setInt(1, user_id);
             rs = st.executeQuery();
             rs.next();
+            result = rs.getInt("PW");
 
             close(rs, st, con);
-            result = rs.getInt("PW");
 
         } catch (Exception e) {
             e.printStackTrace();
