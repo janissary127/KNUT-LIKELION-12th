@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,11 +22,12 @@
     <title>KNUT 멋쟁이사자처럼 12기</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
         <div class="nav_wrapper">
             <a class="nav_logo" href="#home">
-                <img src="./assets/logo.png"/>
+                <img src="./assets/logo.png" />
                 <div>KNUT LIKELION</div>
             </a>
             <nav class="nav_menu">
@@ -38,7 +40,7 @@
             </nav>
 
         </div>
-        
+
     </header>
 
     <div class="container_wrapper">
@@ -46,7 +48,7 @@
             <video id="title_video" autoplay loop muted>
                 <source src="./assets/title_ani.webm" type="video/webm">
             </video>
-            
+
             <div class="login_wrapper">
                 <h2>LOGIN</h2>
                 <form method="post" action="index.html" id="login-form">
@@ -68,9 +70,44 @@
             <p>구성원들</p>
         </div>
         <div id="daily_check" class="container">
-            <p>출석체크 페이지</p>
+            <!--출석체크 인젝션-->
+            <link rel="stylesheet" href="../AttendanceCheck.css">
+            <div class="container">
+                <div class="calendar">
+                    <div class="header">
+                        <div class="month"></div>
+                        <div class="btns">
+                            <div class="btn today-btn">
+                                <i class="fas fa-calendar-day"></i>
+                            </div>
+                            <div class="btn prev-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="btn next-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weekdays">
+                        <div class="day">일</div>
+                        <div class="day">월</div>
+                        <div class="day">화</div>
+                        <div class="day">수</div>
+                        <div class="day">목</div>
+                        <div class="day">금</div>
+                        <div class="day">토</div>
+                    </div>
+                    <div class="days">
+                        <!-- 자바스크립트를 사용하여 날짜 추가 -->
+                    </div>
+                </div>
+            </div>
+            <!-- 자바스크립트 -->
+            <script src="../AttendanceCheck.js"></script>
+            <!--출석체크 종료-->
         </div>
     </div>
     <script type="text/javascript" src="ui.js"></script>
 </body>
+
 </html>
