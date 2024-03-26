@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class testController {
     @GetMapping("hello")
     public String home(){
-
         AttendanceManager llContent = new AttendanceManager();
         //llContent.AttendanceChecking(123);
         if(llContent.AttendanceChecked(123, 20240324))
