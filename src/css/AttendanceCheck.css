@@ -13,7 +13,7 @@
 body {
   background-color: #fff; /* 배경 색상: 흰색 */
 }
-.container {
+.daily_check_container {
   width: 100%;
   min-height: 100vh;
   display: flex;
