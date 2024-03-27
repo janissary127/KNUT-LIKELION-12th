@@ -16,9 +16,33 @@ window.addEventListener('wheel',(e)=>{
     }else if(page > lastPage){
         page = lastPage;
     }
-    console.log(e.deltaY)
-    wrap.style.top = page * -100 + 'vh';
+    wrap.style.top = page * - 100 + 'vh';
 },{passive:false}); // 디폴트 기능 제거 - 스크롤
+
+
+// nav 메뉴 클릭시 스크롤 페이지 이동
+function navScroll(name) {
+    switch(name){
+        case "home":
+            page = 0;
+            wrap.style.top = page * - 100 + 'vh';
+            break;
+        case "info":
+            page = 1;
+            wrap.style.top = page + 'vh';
+            break;
+        case "members":
+            page = 2;
+            wrap.style.top = page + 'vh';
+            break;
+        case "daily_check":
+            page = 3;
+            wrap.style.top = page * - 100 + 'vh';
+            break;
+        default:
+            break;
+    }
+}
 
 // 로그인 & 로그아웃
 
