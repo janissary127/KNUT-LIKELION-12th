@@ -12,5 +12,14 @@
 ---
 
 ## 프로젝트 계획
-![KakaoTalk_20240318_1536354](https://github.com/janissary127/KNUT-LIKELION-12th/assets/88474405/4751cd4e-fd41-4f94-91e4-45c3471bdbf4)
-![KakaoTalk_20240318_153635431_01](https://github.com/janissary127/KNUT-LIKELION-12th/assets/88474405/fb03bb9b-5c90-48a6-ae52-5b0b208ea397)
+
+차후 정리
+
+---
+
+### QA목록
+
+    1. 네비바를 통한 페이지 전환 시 걸림 현상 (화면 중간에 완벽히 걸림)
+    2. 네비바를 통한 페이지 전환 시 이전 페이지가 완전하지 않음 (이전 페이지가 네비바의 절반정도 크기로 보임)
+    3. 출석체크 페이지에서 네비바를 통한 페이지 전환 시 어느 페이지던 HOME 페이지로 이동함
+    
